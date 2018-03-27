@@ -1,0 +1,14 @@
+body{
+    font-family: monospace;
+    text-align: center;
+}
+
+#form{
+    text-align: center;
+}
+
+#knop{
+    color: darkcyan;
+    background-color: aliceblue;
+    border: black;
+}
