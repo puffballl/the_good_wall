@@ -8,14 +8,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>registreer!</title>
 </head>
-<body>
+<form>
 
-<h2>Registreer</h2>
+<div id="navBalk">
+    <br>
+    <h2>Registreer</h2>
+    <br>
+</div>
 <br>
-
-<div id="form"
+<div id="form">
 <form action="verwerkreg.php">
-
+    <br>
     Gebruikersnaam:
     <br>
     <input type="text" id="gebruikersnaam">
@@ -33,13 +36,22 @@
     <br>
     Herhaal wachtwoord:
     <br>
-    <input type="password" id="wachtwoordhh">
+    <input type="password" id="wachtwoord">
+</div>
     <br>
     <input type="submit" value="Registreer" id="knop">
-
+    <br>
 </form>
 
+<div id="overig">
+
+    <a id="terug" href="index.html">Terug naar het home scherm.</a>
+
+</div>
+
+
 <script src="foutmelding.js"></script>
+
 
 </body>
 </html>

@@ -1,14 +1,36 @@
 body{
     font-family: monospace;
     text-align: center;
+    padding-top: 150px;
+    background-image: url("media/blurblur.jpg");
 }
 
 #form{
     text-align: center;
+    border-radius: 10px;
+    border: solid lightseagreen;
+    padding-left: 10px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: cadetblue;
 }
 
 #knop{
     color: darkcyan;
     background-color: aliceblue;
     border: black;
+    border-radius: 20px;
+}
+
+#navBalk{
+    background-color: paleturquoise;
+    position: fixed;
+    heigt: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.terug{
+
 }
