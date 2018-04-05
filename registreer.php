@@ -34,27 +34,20 @@
     <input type="password" id="wachtwoord">
     <br>
     <br>
-    Herhaal wachtwoord:
-    <br>
-    <input type="password" id="wachtwoord_hh">
-    <br>
-    <input type="checkbox" onclick="showPW()">Show Password
+    <input type="checkbox" onclick="showPW()">Laat wachtwoord zien
 </div>
     <br>
     <input type="submit" value="Registreer" id="knop">
     <br>
 </form>
-
+<br>
 <div id="overig">
 
     <a id="terug" href="index.html">Terug naar het home scherm.</a>
 
 </div>
 
-
-
 <script src="foutmelding.js"></script>
-
 
 </body>
 </html>
