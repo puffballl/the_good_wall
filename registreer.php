@@ -36,7 +36,7 @@
     <br>
     Herhaal wachtwoord:
     <br>
-    <input type="password" id="wachtwoord">
+    <input type="password" id="wachtwoord_hh">
 </div>
     <br>
     <input type="submit" value="Registreer" id="knop">
