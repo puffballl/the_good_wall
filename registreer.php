@@ -37,6 +37,8 @@
     Herhaal wachtwoord:
     <br>
     <input type="password" id="wachtwoord_hh">
+    <br>
+    <input type="checkbox" onclick="showPW()">Show Password
 </div>
     <br>
     <input type="submit" value="Registreer" id="knop">
@@ -48,6 +50,7 @@
     <a id="terug" href="index.html">Terug naar het home scherm.</a>
 
 </div>
+
 
 
 <script src="foutmelding.js"></script>
