@@ -1,0 +1,40 @@
+body{
+background-image: url('https://source.unsplash.com/random');
+background-size: cover;
+}
+
+h1 {
+  font-size: 70px;
+  text-align: center;
+  font-style: italic;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+#register {
+  font-size: 20px;
+  text-align: right;
+  font-family: sans-serif;
+  padding-right: 5px;
+}
+
+#inloggen {
+  font-size: 20px;
+  text-align: right;
+  font-family: sans-serif;
+  padding-right: 5px;
+}
+
+.balkje {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+img {
+  margin-top: 15%;
+  border-radius: 50%;
+}
