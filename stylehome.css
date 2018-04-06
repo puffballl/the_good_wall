@@ -1,0 +1,26 @@
+#navBalk{
+    background-color: paleturquoise;
+    text-align: center;
+    position: fixed;
+    height: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    h3{
+        grid-column: 1/5;
+    }
+
+    #fotos{
+        justify-self: center;
+        height: 100px;
+        width: 100px;
+    }
+}
