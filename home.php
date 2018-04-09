@@ -12,24 +12,20 @@
 
 <div id="navBalk">
 <br>
-<h1>Bauhouse</h1>
+<img src="media/bauhaus_logo.png" alt="logo" id="logo">
 <br>
 </div>
 
-<div id="fotos">
-
-    <img src="media/blurblur.jpg" alt= "fotos">
-    <img src="media/bleach%20drinker.jpg" alt= "fotos">
-    <img src="media/pablo.jpg" alt= "fotos">
-    <img src="media/coolscool.png" alt= "fotos">
-    <img src="media/trupy.png" alt= "fotos">
-    <img src="media/cluster%20harold.jpg" alt= "fotos">
-    <img src="media/deprest%20mexican.jpg" alt= "fotos">
-    <img src="media/to%20spicy%20for%20u.jpg" alt= "fotos">
-    <img src="media/white%20face.jpg" alt= "fotos">
-    <img src="media/mad%20mexican.jpg" alt= "fotos">
-
-</div>
+    <img src="media/blurblur.jpg" id="fotos" alt= "fotos">
+    <img src="media/bleach%20drinker.jpg" id="fotos" alt= "fotos">
+    <img src="media/pablo.jpg" id="fotos" alt= "fotos">
+    <img src="media/coolscool.png" id="fotos" alt= "fotos">
+    <img src="media/trupy.png" id="fotos" alt= "fotos">
+    <img src="media/cluster%20harold.jpg" id="fotos" alt= "fotos">
+    <img src="media/deprest%20mexican.jpg" id="fotos" alt= "fotos">
+    <img src="media/to%20spicy%20for%20u.jpg" id="fotos" alt= "fotos">
+    <img src="media/white%20face.jpg" id="fotos" alt= "fotos">
+    <img src="media/mad%20mexican.jpg" id="fotos" alt= "fotos">
 
 </body>
 </html>

@@ -8,6 +8,11 @@
     left: 0;
 }
 
+#logo{
+    height: 200px;
+    width: 400px;
+}
+
 @media screen and (min-width: 940px) {
     body {
         display: grid;
@@ -16,12 +21,6 @@
 
     h3{
         grid-column: 1/5;
-    }
-
-    #fotos{
-        justify-self: center;
-        height: 100px;
-        width: 100px;
     }
 }
 
@@ -38,4 +37,12 @@
     .cover{
         justify-self: center;
     }
+}
+
+#fotos{
+    justify-self: center;
+    max-height: 500%;
+    width: 97%;
+    padding-top: 150px;
+    margin-top: auto;
 }
