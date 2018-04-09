@@ -35,6 +35,8 @@
     <br>
     <br>
     <input type="checkbox" onclick="showPW()">Laat wachtwoord zien
+    <br>
+    <input type="checkbox"> Hierbij gaat u akoort met de <a href="voorwaarden.html">algemene voorwaarden</a>
 </div>
     <br>
     <input type="submit" value="Registreer" id="knop">
