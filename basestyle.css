@@ -1,0 +1,8 @@
+#navBalk{
+    background-color: rgba(255, 255, 255, 0.52);
+    position: fixed;
+    heigt: 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
