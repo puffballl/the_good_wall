@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="stylereg.css">
     <title>registreer!</title>
 </head>
+<body>
 <form>
 
 <div id="navBalk">
@@ -17,11 +18,11 @@
 </div>
 <br>
 <div id="form">
-<form action="verwerkreg.php">
+<form action="verwerk_reg.php" method="post">
     <br>
     Gebruikersnaam:
     <br>
-    <input type="text" id="gebruikersnaam">
+    <input type="text" id="gebruikersnaam" autofocus>
     <br>
     <br>
     E-mailadres:
@@ -36,7 +37,7 @@
     <br>
     <input type="checkbox" onclick="showPW()">Laat wachtwoord zien
     <br>
-    <input type="checkbox"> Hierbij gaat u akoort met de <a href="voorwaarden.html">algemene voorwaarden</a>
+    <input type="checkbox"> Hierbij gaat u akoort met de <a href="https://www.mcdonalds.nl/faq/algemene-informatie">algemene voorwaarden</a>
 </div>
     <br>
     <input type="submit" value="Registreer" id="knop">
