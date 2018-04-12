@@ -14,6 +14,7 @@
 <div id="navBalk">
 <br>
 <img src="media/bauhaus_logo.png" alt="logo" id="logo">
+<a href="acount_instellingen.php">Account instellingen</a>
 <br>
 </div>
 

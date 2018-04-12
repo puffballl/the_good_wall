@@ -1,6 +1,5 @@
 <?php
 
-
 $gebruikersnaam = $_POST['gebruikersnaam'];
 $mail = $_POST['mail'];
 $wachtwoord = $_POST['wachtwoord'];

@@ -1,3 +1,7 @@
+body{
+    background-color: beige;
+}
+
 #navBalk{
     background-color: rgba(255, 255, 255, 0.52);
     position: fixed;
@@ -5,4 +9,5 @@
     width: 100%;
     top: 0;
     left: 0;
+    text-align: center;
 }
