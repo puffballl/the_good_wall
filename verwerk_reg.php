@@ -1,12 +1,12 @@
 <?php
 
 $gebruikersnaam = $_POST['gebruikersnaam'];
-$mail = $_POST['mail'];
+$email = $_POST['email'];
 $wachtwoord = $_POST['wachtwoord'];
 
 $dbc = mysqli_connect('localhost','Quinten_R','Mkhf.','24935_db') or die ('error');
 
-$query = "INSERT INTO theWall VALUES (0,'$gebruikersnaam','$mail','$wachtwoord')";
+$query = "INSERT INTO theWall VALUES (0,'$gebruikersnaam','$email','$wachtwoord')";
 
 $result = mysqli_query($dbc,$query) or die ('error 2');
 
@@ -18,5 +18,3 @@ if ($result){
 else{
     echo 'de gegevens zijn niet goed toegevoegd, <a href="registreer.php">probeer opnieuw.</a>';
 }
-
-

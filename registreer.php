@@ -28,7 +28,7 @@
     <br>
     E-mailadres:
     <br>
-    <input type="email" id="mail">
+    <input type="email" id="email">
     <br>
     <br>
     Wachtwoord:

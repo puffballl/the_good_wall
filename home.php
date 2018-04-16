@@ -13,11 +13,11 @@
 
 <div id="navBalk">
 <br>
-<img src="media/bauhaus_logo.png" alt="logo" id="logo">
-<a href="acount_instellingen.php">Account instellingen</a>
+<img src="media/logo.png" alt="logo" id="logo">
+    <button class="button"><span>upload </span></button>
 <br>
-</div>
-
+</div><div id="barplace"></div>
+<div class="masonry">
     <img src="media/blurblur.jpg" id="fotos" alt= "fotos">
     <img src="media/bleach%20drinker.jpg" id="fotos" alt= "fotos">
     <img src="media/pablo.jpg" id="fotos" alt= "fotos">
@@ -28,6 +28,6 @@
     <img src="media/to%20spicy%20for%20u.jpg" id="fotos" alt= "fotos">
     <img src="media/white%20face.jpg" id="fotos" alt= "fotos">
     <img src="media/mad%20mexican.jpg" id="fotos" alt= "fotos">
-
+</div>
 </body>
 </html>
