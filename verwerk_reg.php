@@ -1,20 +1,35 @@
 <?php
 
+//post-array lezen
 $gebruikersnaam = $_POST['gebruikersnaam'];
 $email = $_POST['email'];
 $wachtwoord = $_POST['wachtwoord'];
 
+
+//data in de database doen
+//verbinden
 $dbc = mysqli_connect('localhost','Quinten_R','Mkhf.','24935_db') or die ('error');
 
-$query = "INSERT INTO theWall VALUES (0,'$gebruikersnaam','$email','$wachtwoord')";
 
+//opdracht geven
+$query = "INSERT INTO theWall VALUES (0,'$voornaam','$tussenvoegsel','$achternaam','$mailadres')";
+
+
+//opdracht uitvoeren
 $result = mysqli_query($dbc,$query) or die ('error 2');
 
+//verbinding verbreken
 mysqli_close($dbc);
 
-if ($result){
-    echo 'de registratie is goed gegaan. <br> <a href="login.html">ga naar het inlog scherm</a>';
+//bevestiggen
+if ($result)
+{
+    echo 'de volgende dingen zijn toegevoegd: <br>';
+    echo $gebruikersnaam .'<br>';
+    echo $email .'<br>';
 }
-else{
-    echo 'de gegevens zijn niet goed toegevoegd, <a href="registreer.php">probeer opnieuw.</a>';
+else
+{
+    echo 'nee, het werkt niet';
 }
+echo '<a href="index.html">Klik hier om naar het inlog scher te gaan.</a>';
