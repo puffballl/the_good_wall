@@ -2,32 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="basestyle.css">
     <link rel="stylesheet" type="text/css" href="stylehome.css">
 </head>
 <body>
 
+
+
 <div id="navBalk">
 <br>
 <img src="media/logo.png" alt="logo" id="logo">
-    <button class="button"><span>upload </span></button>
+    Hallo <?php echo $username ?>
+    <a href="uitlogpoort.php">log uit</a>
+   <a href="upload.php"> <button class="button"><span>upload </span></button></a>
 <br>
 </div><div id="barplace"></div>
-<div class="masonry">
-    <img src="media/blurblur.jpg" id="fotos" alt= "fotos">
-    <img src="media/bleach%20drinker.jpg" id="fotos" alt= "fotos">
-    <img src="media/pablo.jpg" id="fotos" alt= "fotos">
-    <img src="media/coolscool.png" id="fotos" alt= "fotos">
-    <img src="media/trupy.png" id="fotos" alt= "fotos">
-    <img src="media/cluster%20harold.jpg" id="fotos" alt= "fotos">
-    <img src="media/deprest%20mexican.jpg" id="fotos" alt= "fotos">
-    <img src="media/to%20spicy%20for%20u.jpg" id="fotos" alt= "fotos">
-    <img src="media/white%20face.jpg" id="fotos" alt= "fotos">
-    <img src="media/mad%20mexican.jpg" id="fotos" alt= "fotos">
-</div>
+
+    <?php
+    require ("private/convar.php");
+    $mysqli = mysqli_connect(HOST, USER, PASS, DBNAME);
+
+    $query = "SELECT image_id, location, title, description FROM images ORDER BY image_id DESC";
+    $stmt = $mysqli->prepare($query) or die ('Error preparing');
+    $stmt->bind_result($id, $location, $title, $description) or die ('Error binding resukts');
+    $stmt->execute() or die ('Error executing');
+    ?>
+<?php
+echo '<div class="main-wrapper">';
+echo '<div class="masonry">';
+while ($succes = $stmt->fetch()) {
+    echo '<button id="clickImg' . $id . '" class="item"> <img id="img' . $id . '" class="foto"  src="' . $location . '" /></button>';
+    echo '<div id="modalImg' . $id . '" class="modal" style="display: none"> 
+
+            <div class="modal-c">
+                            <span id="close" class="close' . $id . '">X</span>
+                            <br>
+                <div class="modal-b">
+                    <h1 class="mdTit">' . $title . '</h1>
+                    <p class="mdTex">' . $description . '</p>
+                    <img class="mdImg" src="' . $location . '" style=" height: 400px;" />
+                    <hr>
+                  
+                    </div>
+                    </div>
+                    </div>';
+    echo '<script>
+            var modalImg' . $id . ' = document.getElementById("modalImg' . $id . '");
+            var clickImg' . $id . ' = document.getElementById("clickImg' . $id . '");
+            var close' . $id . ' = document.getElementsByClassName("close' . $id . '")[0];
+
+            clickImg' . $id . '.addEventListener("click", openMD' . $id . ');
+            close' . $id . '.addEventListener("click", closeMD' . $id . ');
+            window.addEventListener("click", clickAway' . $id . ');
+
+            function openMD' . $id . '() {
+                modalImg' . $id . '.style.display = "block";
+               }
+
+            function closeMD' . $id . '() {
+                modalImg' . $id . '.style.display = "none";
+               }
+
+            function clickAway' . $id . '(e) {
+                if(e.target == modalImg' . $id . ')
+                modalImg' . $id . '.style.display = "none";
+               }
+            </script>';
+}
+
+echo '</div>';
+echo '</div>';
+
+
+?>
+
+<script src="home.js"></script>
 </body>
 </html>

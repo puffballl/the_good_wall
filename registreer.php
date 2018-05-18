@@ -10,7 +10,6 @@
     <title>registreer!</title>
 </head>
 <body>
-<form>
 
 <div id="navBalk">
     <br>
@@ -19,31 +18,20 @@
 </div>
 <br>
 <div id="form">
-<form action="verwerk_reg.php" method="post">
-    <br>
-    Gebruikersnaam:
-    <br>
-    <input type="text" id="gebruikersnaam" autofocus>
-    <br>
-    <br>
-    E-mailadres:
-    <br>
-    <input type="email" id="email">
-    <br>
-    <br>
-    Wachtwoord:
-    <br>
-    <input type="password" id="wachtwoord">
-    <br>
-    <br>
-    <input type="checkbox" onclick="showPW()">Laat wachtwoord zien
-    <br>
-    <input type="checkbox"> Hierbij gaat u akoort met de <a href="https://www.mcdonalds.nl/faq/algemene-informatie">algemene voorwaarden</a>
+
+    <form method="post" action="verwerk_reg.php">
+        <label>Gebruikersnaam<br><input type="text" name="gebruikersnaam" /></label>
+        <br>
+        <br>
+        <label>Mailadres<br><input type="email" name="mailadres" /></label>
+        <br><br>
+        <label>Wachtwoord<br><input type="password" name="password1" /></label>
+        <br><br>
+        <label>Herhaal Wachtwoord<br><input type="password" name="password2" /></label>
+        <br><br>
+        <input type="submit" name="submit" value="Registreer!" />
+    </form>
 </div>
-    <br>
-    <input type="submit" value="Registreer" id="knop">
-    <br>
-</form>
 <br>
 <div id="overig">
 
@@ -51,7 +39,7 @@
 
 </div>
 
-<script src="foutmelding.js"></script>
+<!--<script src="foutmelding.js"></script>-->
 
 </body>
 </html>

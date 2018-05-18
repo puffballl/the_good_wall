@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+}
+
+.content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url('https://source.unsplash.com/random');
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.content {
+  overflow: auto;
+  position: relative;
+}
+
+// useless after this point, example
+
+.content p {
+  margin: 15px;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+h1 {
+  text-shadow: 0 0 2px black;
+  color: white;
+  font-size: 50px;
+
+}
+
+#vakje {
+  border: solid 1px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.52);
+  width: 200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+#email {
+  width: 170px;
+  height: 30px;
+}
+
+#password {
+  width: 170px;
+  height: 30px;
+}
